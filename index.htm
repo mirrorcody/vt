@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--	<meta charset="utf-8" name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"name="description" content="免费 Web & 编程 教程" name="author" content="Runoob" http-equiv="refresh" content="30"><长模式-->
+<meta charset="utf-8"> <!--定义显示字符编码-->
+<style>
+		.code4bt:hover {
+		background-image:linear-gradient(to top,whitesmoke,white); 
+		color:#2e3c50; 
+		text-align:center;
+		font-size:18px;
+		padding:18px;
+		border:none;
+		cursor:pointer;
+		}
+		.code4bt{
+		background-color:#2e3c50; 
+		color:white; 
+		text-align:center;
+		font-size:18px;
+		padding:18px;
+		border:none;
+		cursor:pointer;
+		}
+		.code4tb{
+		align-items:left;
+		background-color:#2e3c50; 
+		color:white; 
+		text-align:left;
+		}
+		.code4h{
+		margin-left:170px;
+		margin-right:150px;
+		text-align:left;
+		color:#2e3c50;
+		}
+		.code4li{
+			background-color:lightyellow;
+			margin-left:160px;
+			margin-right:160px;
+		}
+		.code4p{
+			margin-left:170px;
+			margin-right:150px;
+			text-align:left;
+		}
+        .table{
+            /*此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
+            display:table;
+            /*border-collapse:collapse;*/
+            /*border-collapse:separate;*/
+            /*border:1px solid #ccc;*/
+			margin-left:160px;
+			margin-right:110px;
+        }
+        .table-caption{
+            /*此元素会作为一个表格标题显示（类似 <caption>）*/
+            display:table-caption;
+            margin:0;
+            font-size:16px;
+        }
+        .table-header-group{
+            /*此元素会作为一个或多个行的分组来显示（类似 <thead>）。*/
+            display:table-header-group;
+            background:#2e3c50;
+            font-weight:bold;
+			color:white;
+        }
+        .table-row-group{
+            /*此元素会作为一个或多个行的分组来显示（类似 <tbody>）。*/
+            display:table-row-group;
+        }
+        .table-footer-group{
+            /*此元素会作为一个或多个行的分组来显示（类似 <tfoot>）。*/
+            display:table-footer-group;
+			border:0px;
+        }
+        ul{
+            list-style:none;
+        }
+        .table-row{
+            /*此元素会作为一个表格行显示（类似 <tr>）。*/
+            display:table-row;
+        }
+        .table-cell{
+            /*此元素会作为一个表格单元格显示（类似 <td> 和 <th>）*/
+            display:table-cell;
+            padding:0px 10px;
+            border:1px solid #ccc;
+			width:350px;
+        }
+		/*此处为鼠标箭头滑过的效果*/
+        .table-row-group .table-row:hover,
+        .table-footer-group .table-row:hover{
+            background:#f6f6f6;
+            color:#16a085;
+            font-weight: bold;
+        }
+ 
+        .table-column-group{
+            /*此元素会作为一个或多个列的分组来显示（类似 <colgroup>）。*/
+            display:table-column-group;
+				
+        }
+        .table-column{
+            /*此元素会作为一个单元格列显示（类似 <col>）*/
+            display:table-column;
+            width:100px;
+        }
+		.sbstyle{
+			float:left;
+			background-color:#7f8c8d;
+			color:white;
+			text-align:left;
+		}
+		*{
+			padding:0;
+			margin:0;
+		}
+		dl a{
+		color:#2e3c50;
+		}	
+		dt{
+			list-style: none;
+			font-size:18px;
+		}
+		/*上面的设置取消了无序列表开头的小圆点，并把所有li元素里的字号设置为50像素*/
+		 
+		dt a{
+			color:white;
+			text-decoration: none;
+		}
+		/*上面把所有a元素里文本的下划线取消了，文本颜色设为深蓝，看起来更美观*/
+		 
+		#menu{
+			width:150px;
+			margin:0px;
+		}
+		 
+		#menu>dt{
+			background-color:#7f8c8d;
+			background-repeat:no-repeat;
+			text-indent:0px;
+		}
+		/*上面把所有外层的li,也就是显示班级的li背景设置为一张灰色细长的图片，这里一定更要注意取消平铺（repeat），否则效果会很难看*/
+		 
+		.boys{
+			display:none;
+			text-indent:30px;
+		}
+		/*上面的设置让class为boys的ul默认隐藏起来，并且在网页上不占位*/
+		dt a:hover {
+		background-color:#7f8c8d;
+		display:block;
+		cursor:pointer;
+		} 
+		#menu>dt:hover .boys{
+			display:block;
+			background-color:#2e3c50;
+			color:#2e3c50;
+			cursor:pointer;
+		}
+		ol{
+		margin-left:35px;
+		background-color:lightyellow;
+		text-align:left;
+		}
+		li span{
+		background-color:lightgreen;
+		margin:-2px;
+		}
+		h3{
+		color:gold;
+		}
+		hr{
+		margin-left:160px;
+		width:75%;
+		}
+		.content{
+		margin-left:160px;
+		color:#7f8c8d;
+		text-align:left;
+		}
+		.spanex{
+		background-color:lightgreen;
+		margin:-2px;
+		}
+</style>
+</head>
+<body>
+	<div id="title" style="background-color:white; color:#2e3c50; text-align:left; ">
+		<h1>学习笔记</h1>
+		</div>
+	<div id="topb" class="code4tb">
+		<button class="code4bt">vim</button>
+		<button class="code4bt">html</button>
+		<button class="code4bt">css</button>
+		<button class="code4bt">jscipt</button>
+		</div>
+	<div id="title" style="background-color:whitesmoke; color:#2e3c50; text-align:left; ">
+		<h3>&nbsp</h3>
+		</div>
+	<div id="main" style="background-color:whitesmoke; color:grey; text-align:center; ">
+
+		<div id="sidebar" class="sbstyle">
+			<dl id="menu">
+				<dt><a href="#href1">VIM的安装</a>
+			<dl class="boys">
+				<dt><a href="#href11">-Windows</a></dt>
+				<dt><a href="#href12">-MacOsX</a></dt>
+			</dl>
+			</dt>
+			<dt><a href="#href2">VIM的配置与使用</a>
+			<dl class="boys">
+				<dt><a href="#href21">- 基础设定</a></dt>
+				<dt><a href="#href22">- 插件与设定</a></dt>
+				<dt><a href="#href23">- 默认快捷键</a></dt>
+				<dt><a href="#href24">- 自定义映射</a></dt>
+				<dt><a href="#href25">- 高频使用键</a></dt>
+			</dl>
+			</dt>
+				<dt><a href="#href3">开发与进阶</a>
+				<dl class="boys">
+				<dt><a href="#href31">- 指令集</a></dt>
+				<dt><a href="#href32">- 开发语言</a></dt>
+				</dl>
+				</dt>	
+			</dl>
+		</div>
+		<div id="info" style="background-color:#EEEEEE; color:#2e3c50; width:100px; float:right; text-align:left;">
+			<p>笔记</p>
+			<p>笔记</p>
+		</div>
+		<h3 class="code4h">VIM的安装</h3>
+		<left><hr></left>
+		<div><h2 class="code4p">windows下的VIM安装</h2></div>
+		<div><p class="content"><span class="spanex">&nbsp</span> 环境</p></div>
+		<div class="code4li">
+			<ol type="A">
+				<li>第1点第1小点
+					<ol type="I">
+						<li>123</li>
+						<li>223</li>
+					</ol>
+				</li>
+				<li>第1点第1小点</li>
+				<li>第1点第1小点</li>
+				<li>第1点第1小点</li>
+				<li>第1点第1小点</li>
+				<li>第1点第1小点</li>
+			</ol>
+		</div>
+		<div id="href" class="table" >
+        <!--此行代码用于，控制列的样式。-->
+				<div class="table-column-group">
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+				</div>
+				<!--如果不写上一个div, 也可以把样式写在以下div里。 -->
+				<div class="table-header-group">
+					<p>vim的安装</p>
+					<ul class="table-row">
+						<li class="table-cell">流程</li>
+						<li class="table-cell">笔记</li>
+						<li class="table-cell">引链</li>
+					</ul>
+				</div>
+				<div class="table-row-group">
+					<ul class="table-row">
+						<li class="table-cell">1</li>
+						<li class="table-cell">这里能显示出来的部分只有一个NerdTree和TagBar，然后就是下面的一条powerline，但实际上还有很多当前界面没有体现出来的部分，vim在可扩展性和定制化程度上有相当大的发展空间，尤其是在编写代码的时候，更能体会到vim的强大。</li>
+						<li class="table-cell">19</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">2</li>
+						<li class="table-cell">Mark</li>
+						<li class="table-cell">21</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">3</li>
+						<li class="table-cell">Kate</li>
+						<li class="table-cell">26</li>
+					</ul>
+				</div>
+				<div class="table-footer-group">
+					<ul class="table-row">
+						&nbsp
+					</ul>
+				</div>
+		</div>
+		<div class="code4p"><p>这里是随便打的内容</p></div>
+		<div class="code4li">
+			<ol start="1">
+				<li>
+					<span>&nbsp</span>这里能显示出来的部分只有一个NerdTree和TagBar，然后就是下面的一条powerline，vim在可扩展性和定制化程度上有相当大的发展空间。这里能显示出来的部分只有一个NerdTree和TagBar，然后就是下面的一条powerline，vim在可扩展性和定制化程度上有相当大的发展空间。
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有水卖
+				</li>
+				<li>
+					<span>&nbsp</span>有西水卖
+				</li>
+			</ol>
+			</div>
+		</div>
+		<div class="table" >
+        
+        <!--此行代码用于，控制列的样式。-->
+				<div class="table-column-group">
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+				</div>
+				<!--如果不写上一个div, 也可以把样式写在以下div里。 -->
+				<div class="table-header-group">
+					<p>vim的安装</p>
+					<ul class="table-row">
+						<li class="table-cell">流程</li>
+						<li class="table-cell">笔记</li>
+						<li class="table-cell">引链</li>
+					</ul>
+				</div>
+				<div class="table-row-group">
+					<ul class="table-row">
+						<li class="table-cell">1</li>
+						<li class="table-cell">John</li>
+						<li class="table-cell">19</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">2</li>
+						<li class="table-cell">Mark</li>
+						<li class="table-cell">21</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">3</li>
+						<li class="table-cell">Kate</li>
+						<li class="table-cell">26</li>
+					</ul>
+				</div>
+				<div class="table-footer-group">
+					<ul class="table-row">
+					&nbsp	
+					</ul>
+				</div>
+		</div>
+		<div class="table" >
+        
+        <!--此行代码用于，控制列的样式。-->
+				<div class="table-column-group">
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+				</div>
+				<!--如果不写上一个div, 也可以把样式写在以下div里。 -->
+				<div class="table-header-group">
+					<p>vim的安装</p>
+					<ul class="table-row">
+						<li class="table-cell">流程</li>
+						<li class="table-cell">笔记</li>
+						<li class="table-cell">引链</li>
+					</ul>
+				</div>
+				<div class="table-row-group" >
+					<ul class="table-row">
+						<li class="table-cell">1</li>
+						<li class="table-cell">John</li>
+						<li class="table-cell">19</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">2</li>
+						<li class="table-cell">Mark</li>
+						<li class="table-cell">21</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">3</li>
+						<li class="table-cell">Kate</li>
+						<li class="table-cell">26</li>
+					</ul>
+				</div>
+				<div class="table-footer-group">
+					<ul class="table-row">
+						&nbsp
+					</ul>
+				</div>
+		</div>
+		<div class="table">
+        
+        <!--此行代码用于，控制列的样式。-->
+				<div class="table-column-group">
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+				</div>
+				<!--如果不写上一个div, 也可以把样式写在以下div里。 -->
+				<div class="table-header-group">
+					<p>vim的安装</p>
+					<ul class="table-row">
+						<li class="table-cell">流程</li>
+						<li class="table-cell">笔记</li>
+						<li class="table-cell">引链</li>
+					</ul>
+				</div>
+				<div class="table-row-group">
+					<ul class="table-row">
+						<li class="table-cell">1</li>
+						<li class="table-cell">John</li>
+						<li class="table-cell">19</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">2</li>
+						<li class="table-cell">Mark</li>
+						<li class="table-cell">21</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">3</li>
+						<li class="table-cell">Kate</li>
+						<li class="table-cell">26</li>
+					</ul>
+				</div>
+				<div class="table-footer-group">
+					<ul class="table-row">
+					&nbsp
+					</ul>
+				</div>
+		</div>
+		<div id="href" class="table">
+        
+        <!--此行代码用于，控制列的样式。-->
+				<div class="table-column-group">
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+					<div class="table-column"></div>
+				</div>
+				<!--如果不写上一个div, 也可以把样式写在以下div里。 -->
+				<div class="table-header-group">
+					<p>vim的安装</p>
+					<ul class="table-row">
+						<li class="table-cell">流程</li>
+						<li class="table-cell">笔记</li>
+						<li class="table-cell">引链</li>
+					</ul>
+				</div>
+				<div class="table-row-group">
+					<ul class="table-row">
+						<li class="table-cell">1</li>
+						<li class="table-cell">John</li>
+						<li class="table-cell">19</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">2</li>
+						<li class="table-cell">Mark</li>
+						<li class="table-cell">21</li>
+					</ul>
+					<ul class="table-row">
+						<li class="table-cell">3</li>
+						<li class="table-cell">Kate</li>
+						<li class="table-cell">26</li>
+					</ul>
+				</div>
+				<div class="table-footer-group">
+					<ul class="table-row">
+					&nbsp	
+					</ul>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -5,45 +5,45 @@
 <meta charset="utf-8"> <!--定义显示字符编码-->
 <style>
 		.code4bt:hover {
-		background-image:linear-gradient(to top,whitesmoke,white); 
-		color:#2e3c50; 
-		text-align:center;
-		font-size:18px;
-		padding:18px;
-		border:none;
-		cursor:pointer;
-		}
+			background-image:linear-gradient(to top,whitesmoke,white); 
+			color:#2e3c50; 
+			text-align:center;
+			font-size:18px;
+			padding:18px;
+			border:none;
+			cursor:pointer;
+			}
 		.code4bt{
-		background-color:#2e3c50; 
-		color:white; 
-		text-align:center;
-		font-size:18px;
-		padding:18px;
-		border:none;
-		cursor:pointer;
-		}
+			background-color:#2e3c50; 
+			color:white; 
+			text-align:center;
+			font-size:18px;
+			padding:18px;
+			border:none;
+			cursor:pointer;
+			}
 		.code4tb{
-		align-items:left;
-		background-color:#2e3c50; 
-		color:white; 
-		text-align:left;
-		}
+			align-items:left;
+			background-color:#2e3c50; 
+			color:white; 
+			text-align:left;
+			}
 		.code4h{
-		margin-left:170px;
-		margin-right:150px;
-		text-align:left;
-		color:#2e3c50;
-		}
+			margin-left:170px;
+			margin-right:150px;
+			text-align:left;
+			color:#2e3c50;
+			}
 		.code4li{
 			background-color:lightyellow;
 			margin-left:160px;
 			margin-right:160px;
-		}
+			}
 		.code4p{
 			margin-left:170px;
 			margin-right:150px;
 			text-align:left;
-		}
+			}
         .table{
             /*此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
             display:table;
@@ -52,139 +52,139 @@
             /*border:1px solid #ccc;*/
 			margin-left:160px;
 			margin-right:110px;
-        }
+			}
         .table-caption{
             /*此元素会作为一个表格标题显示（类似 <caption>）*/
             display:table-caption;
             margin:0;
             font-size:16px;
-        }
+			}
         .table-header-group{
             /*此元素会作为一个或多个行的分组来显示（类似 <thead>）。*/
             display:table-header-group;
             background:#2e3c50;
             font-weight:bold;
 			color:white;
-        }
+			}
         .table-row-group{
             /*此元素会作为一个或多个行的分组来显示（类似 <tbody>）。*/
             display:table-row-group;
-        }
+			}
         .table-footer-group{
             /*此元素会作为一个或多个行的分组来显示（类似 <tfoot>）。*/
             display:table-footer-group;
 			border:0px;
-        }
+			}
         ul{
             list-style:none;
-        }
+			}
         .table-row{
             /*此元素会作为一个表格行显示（类似 <tr>）。*/
             display:table-row;
-        }
+			}
         .table-cell{
             /*此元素会作为一个表格单元格显示（类似 <td> 和 <th>）*/
             display:table-cell;
             padding:0px 10px;
             border:1px solid #ccc;
 			width:350px;
-        }
+			}
 		/*此处为鼠标箭头滑过的效果*/
         .table-row-group .table-row:hover,
         .table-footer-group .table-row:hover{
             background:#f6f6f6;
             color:#16a085;
             font-weight: bold;
-        }
- 
+			}
         .table-column-group{
             /*此元素会作为一个或多个列的分组来显示（类似 <colgroup>）。*/
             display:table-column-group;
-				
-        }
+		
+			}
         .table-column{
             /*此元素会作为一个单元格列显示（类似 <col>）*/
             display:table-column;
             width:100px;
-        }
+			}
 		.sbstyle{
 			float:left;
 			background-color:#7f8c8d;
 			color:white;
 			text-align:left;
-		}
+			}
 		*{
 			padding:0;
 			margin:0;
-		}
+			}
 		dl a{
-		color:#2e3c50;
-		}	
+			color:#2e3c50;
+			}	
 		dt{
 			list-style: none;
 			font-size:18px;
-		}
+			}
 		/*上面的设置取消了无序列表开头的小圆点，并把所有li元素里的字号设置为50像素*/
 		 
 		dt a{
 			color:white;
 			text-decoration: none;
-		}
+			}
 		/*上面把所有a元素里文本的下划线取消了，文本颜色设为深蓝，看起来更美观*/
 		 
 		#menu{
 			width:150px;
 			margin:0px;
-		}
+			}
 		 
 		#menu>dt{
 			background-color:#7f8c8d;
 			background-repeat:no-repeat;
 			text-indent:0px;
-		}
+			}
 		/*上面把所有外层的li,也就是显示班级的li背景设置为一张灰色细长的图片，这里一定更要注意取消平铺（repeat），否则效果会很难看*/
 		 
 		.boys{
 			display:none;
 			text-indent:30px;
-		}
+			}
 		/*上面的设置让class为boys的ul默认隐藏起来，并且在网页上不占位*/
 		dt a:hover {
-		background-color:#7f8c8d;
-		display:block;
-		cursor:pointer;
-		} 
+			background-color:#7f8c8d;
+			display:block;
+			cursor:pointer;
+			} 
 		#menu>dt:hover .boys{
 			display:block;
 			background-color:#2e3c50;
 			color:#2e3c50;
 			cursor:pointer;
-		}
+			}
 		ol{
-		margin-left:35px;
-		background-color:lightyellow;
-		text-align:left;
-		}
+			margin-left:35px;
+			background-color:lightyellow;
+			text-align:left;
+			}
 		li span{
-		background-color:lightgreen;
-		margin:-2px;
-		}
+			background-color:lightgreen;
+			margin:-2px;
+			}
 		h3{
-		color:gold;
-		}
+			color:gold;
+			}
 		hr{
-		margin-left:160px;
-		width:75%;
-		}
+			margin-left:160px;
+			width:75%;
+			}
 		.content{
-		margin-left:160px;
-		color:#7f8c8d;
-		text-align:left;
-		}
+			margin-left:160px;
+			margin-right:0 auto;
+			color:#7f8c8d;
+			text-align:center;
+			}
 		.spanex{
-		background-color:lightgreen;
-		margin:-2px;
-		}
+			background-color:lightgreen;
+			margin:-2px;
+			}
 </style>
 </head>
 <body>
@@ -495,11 +495,13 @@
 				</div>
 		</div>
 	</div>
+	<div class="content">
 	<div style="height:1000px;width:1000px;background-color:black">
-	<div style="height:500px;width:100px;background-color:white;display:inline-block;">
+	<div style="height:500px;width:300px;background-color:white;display:inline-block;float:left;">
 	</div>
-	<div style="height:300px;width:100px;background-color:green;display:inline-block;">
+	<div style="height:300px;width:300px;background-color:green;display:inline-block;float:left;">
 	</div>
+		</div>
 		</div>
 </body>
 
